@@ -10,9 +10,10 @@ class Model(object):
         pass
 
     def read_csv(self, filename, delimiter=' ', quotechar='|'):
-        out = ""
+        out = ''
         with open(filename, newline='\n') as csvfile:
             spamreader = csv.reader(csvfile, delimiter=delimiter, quotechar=quotechar)
             for row in spamreader:
-                out += ', '.join(row)
+                print(row)
+                out += ', '.join(row)+'\n'
         return out
