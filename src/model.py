@@ -14,6 +14,5 @@ class Model(object):
         with open(filename, newline='\n') as csvfile:
             spamreader = csv.reader(csvfile, delimiter=delimiter, quotechar=quotechar)
             for row in spamreader:
-                print(row)
                 out += ', '.join(row)+'\n'
         return out
