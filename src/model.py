@@ -14,7 +14,7 @@ class Model(object):
         if filename is None:
             raise TypeError("1st parameter was from type None")
         if not filename.endswith('.csv'):
-            raise IOError("Wrong filetype, expected file extension was %s, got %s instead" % ('.csv', os.path.splitext(filename)[1]))
+            raise IOError("Wrong file extension, expected file extension was %s, got %s instead" % ('.csv', os.path.splitext(filename)[1]))
         out = ""
         with open(filename, newline='\n') as csvfile:
             spamreader = csv.reader(csvfile, delimiter=delimiter, quotechar=quotechar)
