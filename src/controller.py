@@ -13,5 +13,3 @@ class Controller(object):
         return self.model.read_csv(filename, delimiter=';')
 
 controller = Controller()
-csv = controller.model.read_csv("..\\resources\\sample.csv")
-# print(csv)
