@@ -7,9 +7,21 @@ class Model(object):
 
     """
     def __init__(self):
+        """
+        Constructor
+
+        """
         pass
 
     def read_csv(self, filename, delimiter=' ', quotechar='|'):
+        """
+        Reading a .csv file
+
+        :param filename:
+        :param delimiter: String Seperation Character which is used in the CSV
+        :param quotechar: String
+        :return: the csv file as string
+        """
         if filename is None:
             raise TypeError("1st parameter was from type None")
         if not filename.endswith('.csv'):

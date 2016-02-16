@@ -8,7 +8,7 @@ class Controller(object):
     """
     def __init__(self):
         """
-        Initializing variables
+        Constructor
 
         """
         self.model = Model()
