@@ -26,9 +26,7 @@ class Controller(QWidget):
         self.setup_signals()
 
     def setup_signals(self):
-        # self.view.open.clicked.connect(lambda: self.model.read_file(self.tmp))
         self.view.open.clicked.connect(lambda: self.open_clicked())
-        # self.view.pushButton.clicked.connect(lambda: self.model.on_button_pressed(self.view.pushButton))
 
     def open_clicked(self):
         fname = QFileDialog.getOpenFileName(self.mainwindow, 'Öffnen ...', os.getcwd())
