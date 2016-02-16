@@ -1,6 +1,4 @@
-
 import unittest
-
 from src.model import Model
 
 
