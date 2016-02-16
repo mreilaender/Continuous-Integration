@@ -1,5 +1,7 @@
-from src.model import Model
+
 import unittest
+
+from src.model import Model
 
 
 class TestModel(unittest.TestCase):
@@ -14,7 +16,3 @@ class TestModel(unittest.TestCase):
 
     def test_wrong_filetype_no_csv(self):
         self.assertRaises(IOError, self.model.read_csv, "..\\resources\\gui.ui")
-
-
-
-unittest.main()
